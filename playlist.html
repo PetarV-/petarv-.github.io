@@ -1,0 +1,22 @@
+---
+layout: default
+title: Playlist
+index: 4
+class: page
+---
+
+<h1>Playlist</h1>
+<h2>Here I will maintain a (roughly weekly) playlist of 20 tracks which have currently captured my interest, given in an arbitrary order. Genres and periods may either vary or be highly specific (it depends on the current mood really). Only constraint: no more than one song by a particular artist (this includes featured appearances). Hope you'll find something interesting!</h2>
+
+<ul id="playlist">
+    {% for track in site.data.playlist.tracks %}
+    <li><div>
+            <img class="cover-artwork" src="{{ track.artwork_url }}" />
+            <div class="track-meta"><div class="track-name">{{ track.name }}</div>
+            <div class="track-meta-row"><span class="track-meta-row-label">by</span> <span class="track-artist">{{ track.artist }}</span></div>
+            {% if track.album %}
+            <div class="track-meta-row"><span class="track-meta-row-label">from</span> <span class="track-album">{{ track.album.name }}</span> <span class="track-album-year">({{ track.album.year }})</span></div></div>
+            {% endif %}
+        {% if track.url %}<a href="{{ track.url }}"></a>{% endif %}</div></li>
+    {% endfor %}
+</ul>

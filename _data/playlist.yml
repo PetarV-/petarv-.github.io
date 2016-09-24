@@ -1,0 +1,162 @@
+tracks:
+    - name: Calm Down
+      artist: Katy B, Four Tet & Floating Points
+      artwork_url: http://www.josepvinaixa.com/blog/wp-content/uploads/2015/12/Katy-B-Honey-2016-2400x2400.jpg
+      url: http://www.katybofficial.com/gb/home/
+      album:
+          name: Honey
+          year: 2016
+
+    - name: Lost & Not Found
+      artist: Chase & Status feat. Louis M^ttrs
+      artwork_url: http://www.josepvinaixa.com/blog/wp-content/uploads/2013/10/Chase-Status-Brand-New-Machine-2013-1200x1200.png
+      url: http://chaseandstatus.co.uk
+      album:
+          name: Brand New Machine
+          year: 2013
+
+    - name: Ghost Assassin (VIP)
+      artist: Maduk feat. Veela
+      artwork_url: http://displace.audio/wp-content/uploads/2015/04/Liquicity-Memoirs.jpeg
+      url: https://soundcloud.com/madukdnb
+      album:
+          name: Liquicity Memoirs
+          year: 2015
+
+    - name: Notget
+      artist: Björk
+      artwork_url: http://cdn3.pitchfork.com/albums/21447/homepage_large.9ee25a14.jpg
+      url: http://bjork.com
+      album:
+          name: Vulnicura
+          year: 2015
+
+    - name: Love On My Mind 
+      artist: Freemasons feat. Amanda Wilson
+      artwork_url: https://images-na.ssl-images-amazon.com/images/I/61OYdQM5hgL.jpg
+      url: https://www.facebook.com/freemasons/
+      album:
+          name: Unmixed
+          year: 2007
+
+    - name: Feels Like We Only Go Backwards
+      artist: Tame Impala
+      artwork_url: http://img2-ak.lst.fm/i/u/ar0/b26ef0952cfb42ea8963a4283789599d
+      url: http://www.tameimpala.com
+      album:
+          name: Lonerism
+          year: 2012
+
+    - name: DEATHCAMP
+      artist: Tyler, the Creator feat. Cole Alexander
+      artwork_url: https://upload.wikimedia.org/wikipedia/en/2/26/Cherry_Bomb_Tyler_the_Creator.png
+      url: https://twitter.com/tylerthecreator
+      album:
+          name: Cherry Bomb
+          year: 2015
+
+    - name: Never Catch Me
+      artist: Flying Lotus feat. Kendrick Lamar
+      artwork_url: http://cdn.pitchfork.com/albums/21115/e8895358.jpg
+      url: http://www.flying-lotus.com
+      album:
+          name: You're Dead!
+          year: 2014
+
+    - name: Just For Now
+      artist: Imogen Heap
+      artwork_url: https://lastfm-img2.akamaized.net/i/u/ar0/041c982efd2942e3815be4b8845db821
+      url: http://imogenheap.com/home.php?
+      album:
+          name: Speak For Yourself
+          year: 2006
+
+    - name: Better Love
+      artist: Foxes
+      artwork_url: http://cdn3.pitchfork.com/albums/22830/cf79c557.jpg
+      url: http://www.iamfoxes.com
+      album:
+          name: All I Need
+          year: 2016
+
+    - name: Inhale Exhale
+      artist: NAO
+      artwork_url: http://cdn2.thelineofbestfit.com/images/remote/http_cdn2.thelineofbestfit.com/media/2014/NAO_AlbumCover-RGB_iau0fw.jpg
+      url: https://www.facebook.com/thisnao/
+      album:
+          name: For All We Know
+          year: 2016
+
+    - name: E più ti penso
+      artist: Andrea Bocelli & Ariana Grande
+      artwork_url: http://tshop.r10s.com/50f/f9f/0497/19c7/f0be/6c8d/3ace/119de5aa4f005056ae7405.jpg
+      url: http://www.andreabocelli.com
+      album:
+          name: Cinema
+          year: 2015
+
+    - name: Starry Eyed
+      artist: Ellie Goulding
+      artwork_url: http://cdn1.umg3.net/12/files/2015/10/1200x1200sr.jpg
+      url: http://www.elliegoulding.com
+      album:
+          name: Bright Lights
+          year: 2010
+
+    - name: Promise (Reprise)
+      artist: Akira Yamaoka
+      artwork_url: http://img2-ak.lst.fm/i/u/ar0/5eec6204b6c6489dc8fa9a2e12fa4643
+      url: http://www.akirayamaoka.jp
+      album:
+          name: Silent Hill 2 OST
+          year: 2001
+
+    - name: Blame
+      artist: Calvin Harris feat. John Newman
+      artwork_url: http://popculturedaily.guru/wp-content/uploads/2014/11/Calvin_Harris_-_Motion.jpg
+      url: http://calvinharris.com
+      album:
+          name: Motion
+          year: 2014
+
+    - name: Feels
+      artist: Kiiara
+      artwork_url: http://www.josepvinaixa.com/blog/wp-content/uploads/2016/03/Kiiara-low-kii-savage-2016-2480x2480.jpg
+      url: http://iamkiiara.com
+      album:
+          name: low kii savage - EP
+          year: 2016
+
+    - name: From Bath With Love
+      artist: Danny Byrd feat. T-Lace
+      artwork_url: http://images.junostatic.com/full/CS1885054-02A-BIG.jpg
+      url: http://www.byrdfeed.co.uk
+      album:
+          name: Supersized
+          year: 2008
+
+    - name: Breathe
+      artist: Eric Prydz feat. Rob Swire
+      artwork_url: http://zone1.ibizaspotlightsl.netdna-cdn.com/sites/default/files/article-images/123513/coupon-1455211717.jpg
+      url: http://www.ericprydz.tv
+      album:
+          name: Opus
+          year: 2016
+
+    - name: Digital Love
+      artist: Daft Punk
+      artwork_url: http://d19y6wq6pk1k2b.cloudfront.net/~/media/images/artists/daft%20punk/daft-punk-discovery-1000x1000.png?mw=1500
+      url: https://www.daftpunk.com
+      album:
+          name: Discovery
+          year: 2001
+
+    - name: Contact
+      artist: Foreign Beggars & Noisia
+      artwork_url: http://images.junostatic.com/full/CS1480887-02A-BIG.jpg
+      url: http://www.foreignbeggars.com
+      album:
+          name: Contact - EP
+          year: 2009
+
+

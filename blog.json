@@ -1,0 +1,16 @@
+---
+---
+
+{
+    "posts": [
+        {% for p in site.posts %}{
+            {% if p.author %}"author": {{ p.author | jsonify }},{% endif %}
+            {% if p.date %}"date": "{{ p.date | date_to_xmlschema }}",{% endif %}
+            "title": {{ p.title | jsonify }},
+            "url": {{ p.url | prepend: site.baseurl | jsonify }},
+            "blurb": {{ p.excerpt | remove: '<p>' | remove: '</p>' | jsonify }}{% if p.categories %},
+            "categories": {{ p.categories | jsonify }}
+            {% endif %}
+        }{% unless forloop.last %},{% endunless %}{% endfor %}
+    ]
+}

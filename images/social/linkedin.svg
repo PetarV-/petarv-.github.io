@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   viewBox="0 0 61.25 58.75"
+   height="58.75"
+   width="61.25"
+   xml:space="preserve"
+   version="1.1"
+   id="svg5463"><metadata
+     id="metadata5469"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs5467"><clipPath
+       id="clipPath5481"
+       clipPathUnits="userSpaceOnUse"><path
+         id="path5483"
+         d="m 0.229967,0.6789847 -0.2155498,0 0,-0.6748937 0.2155498,0 0,0.6748937 z m 0.0137315,0.2083895 c -6.66e-4,0.0660578 -0.0463954,0.1164442 -0.1201903,0.1164442 -0.0731607,0 -0.1214906,-0.0503864 -0.1214906,-0.1164442 0,-0.0647023 0.0463637,-0.1164773 0.1188901,-0.1164773 l 0.0013,0 0,0 c 0.0750951,0 0.1221565,0.051775 0.1214905,0.1164773 z M 1.0053373,0.3909159 c 0,0.2070339 -0.1058246,0.3037071 -0.2475477,0.3037071 -0.1162897,0 -0.1672199,-0.0674133 -0.1953172,-0.1137001 l 0.0013,0 0,0.0980618 -0.2149155,0 c 0,0 0.002632,-0.0633467 0,-0.6748937 l 0,0 0.2149155,0 0,0.3766087 c 0,0.0204323 0.001966,0.0401703 0.007199,0.0551474 0.0156659,0.0401702 0.0509302,0.0817291 0.1103911,0.0817291 0.0777274,0 0.109091,-0.0619581 0.109091,-0.1525479 l 0,-0.3609373 0.2148838,0 0,0.3868249 z" /></clipPath></defs><g
+     transform="matrix(1.25,0,0,-1.25,0,58.75)"
+     id="g5471"><g
+       id="g5473"><g
+         transform="scale(49,47)"
+         id="g5475"><g
+           id="g5477"><g
+             clip-path="url(#clipPath5481)"
+             id="g5479"><image
+               id="image5485"
+               xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAvCAYAAABKQCL3AAAABHNCSVQICAgIfAhkiAAAAFVJREFUaIHtzwENgDAQwMBt/j0/JpZwkJ6Cds/MrI87bwfc0ISiCUUTiiYUTSiaUDShaELRhKIJRROKJhRNKJpQNKFoQtGEoglFE4omFE0omlD8YuIB4jgEWtui/L0AAAAASUVORK5CYII="
+               transform="matrix(1,0,0,-1,0,1)"
+               preserveAspectRatio="none"
+               height="1"
+               width="1" /></g></g></g></g></g></svg>

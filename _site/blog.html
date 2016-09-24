@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Blog | Petar Veličković</title>
+    <meta name="description" content="My personal blog about computer science, music, gaming, and more. 
+">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="canonical" href="http://petarv-.github.io/blog.html">
+    <link rel="alternate" type="application/rss+xml" title="Petar Veličković" href="http://petarv-.github.io/feed.xml">
+    
+</head>
+
+
+    <body>
+        <header>
+    <h1>
+        <div class="headshot"></div>
+        Petar Veličković
+    </h1>
+    
+    <h2>PhD student in Machine Learning and Bioinformatics</h2>
+    
+    <nav>
+        <ul>
+            <li><a  href="/">Home</a></li><li><a  href="/about.html">About</a></li><li><a  class="current" href="/blog.html">Blog</a></li><li><a  href="/playlist.html">Playlist</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+        <section id="content"class="page blog">
+            <h1>Blog</h1>
+
+<section id="blog-main">
+    <input type="text" id="search-box-mobile" class="search-box" placeholder="Search..." />
+    
+    <article class="blog-post-brief">
+        <h1><a href="/tv-shows/2016/09/20/hello-friend.html">Hello, friend</a></h1>
+        
+        <div class="meta">
+            by <span class="author">PetarV</span>
+            
+            on <time pubdate>September 20, 2016</time>
+            
+        </div>
+        
+        <p class="blurb">
+            Hello friend. Hello friend? That’s lame. Maybe I should give you a name? But
+that’s a slippery slope. You’re only in my head. We have to remember that. S**t.
+It’s actually happened, I’m talking to an imaginary person.
+
+
+        </p>
+    </article>
+    
+</section>
+<aside id="blog-sidebar">
+    <input type="text" id="search-box-desktop" class="search-box" placeholder="Search..." />
+    <section id="blog-categories">
+        <h1>Categories</h1>
+        <ul>
+            <li>
+            
+                <input type="checkbox" checked id="category-computer-science" data-category-name="computer-science" />
+                <label for="category-computer-science">Computer Science</label>
+            </li><li>
+            
+                <input type="checkbox" checked id="category-gaming" data-category-name="gaming" />
+                <label for="category-gaming">Gaming</label>
+            </li><li>
+            
+                <input type="checkbox" checked id="category-music" data-category-name="music" />
+                <label for="category-music">Music</label>
+            </li><li>
+            
+                <input type="checkbox" checked id="category-tv-shows" data-category-name="tv-shows" />
+                <label for="category-tv-shows">TV Shows</label>
+            </li>
+        </ul>
+    </section>
+    <section id="blog-months">
+        <h1>Months</h1>
+        <ul>
+            
+            <li>
+                <input type="checkbox" checked id="month-9-2016" data-month="9" data-year="2016" />
+                <label for="month-9-2016">September 2016</label>
+            </li>
+            
+        </ul>
+
+    </section>
+</aside>
+<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+<script type="text/javascript">
+    (function(entrypoint) {
+        entrypoint(window.jQuery, window, document);
+}(function($, window, document) {
+    var posts, months = [
+        'January',
+        'February',
+        'March',
+        'April',
+        'May',
+        'June',
+        'July',
+        'August',
+        'September',
+        'October',
+        'November',
+        'December'
+    ];
+
+    /* To avoid the usage of a heavyweight library such as Moment.js, as we
+     * only need easy date formatting */
+    function formatDate(date) {
+        return s = months[date.getMonth()] + " " + date.getDate() + ", " + date.getFullYear();
+    }
+
+    function displayPosts(posts) {
+        /* Hardcoded view - not a good practice. To solve this in an elegant way and
+         * without any backend code, we need a full-blown MVC framework which is obviously 
+         * an overkill. */
+
+        var html = 
+            ' \
+            <article class="blog-post-brief"> \
+            <h1><a></a></h1> \
+            <div class="meta"> \
+            by <span class="author"></span> \
+            on <time pubdate></time> \
+            </div> \
+            <p class="blurb"> \
+            </p> \
+            </article>',
+            template = $(html),
+            par = $('#blog-main');
+
+        par.children('article, p').remove();
+        if (posts.length > 0) {
+            for (var i = 0; i < posts.length; i++) {
+                var post = posts[i], node = template.clone();
+
+                node.find('h1 a')
+                    .text(post.title)
+                    .attr('href', post.url);
+
+                node.find('.author')
+                    .text(post.author);
+
+                node.find('.blurb')
+                    .html(post.blurb);
+
+                node.find('time')
+                    .text(formatDate(new Date(post.date)));
+
+                par.append(node);
+            }
+        } else {
+            par.append($('<p>No results matching your search found.</p>'));
+        }
+    };
+
+    function addOrRemove(checked, array, item) {
+        var i = array.indexOf(item);
+        if (checked && i < 0) {
+            array.push(item);
+        } else if (!checked && i >= 0) {
+            array.splice(i, 1);
+        }
+    }
+
+    function dateToIndex(date) {
+        return 12 * parseInt(date.getFullYear()) + parseInt(date.getMonth());
+    }
+
+    $(function() {
+        $.get('blog.json', function(resp) {
+            posts = resp.posts;
+            var postsByCategory = {}, categoryList = [], monthsMap = {}, monthList = [];
+
+            for (var i = 0; i < posts.length; i++) {
+                var post = posts[i];
+
+                /* For each category the post belongs to, add it to the appropriate 
+                 * category array */
+                for (var j = 0; j < post.categories.length; j++) {
+                    var category = post.categories[j];
+                    if (postsByCategory[category] === undefined) {
+                        postsByCategory[category] = [ i ];
+                        categoryList.push(category);
+                    } else {
+                        postsByCategory[category].push(i);
+                    }
+                }
+
+                /* Also add the post to the appropriate date hash */
+                var date = new Date(post.date), idx = dateToIndex(date);
+                if (monthsMap[idx] === undefined) {
+                    monthsMap[idx] = true;
+                    monthList.push(idx);
+                }
+            }
+
+            function search(query, searchCategories, searchMonths) {
+                var resultMap = {};
+                query = query.toLowerCase();
+
+                /* Modify to taste. */
+                function queryMatch(title) {
+                    if (typeof query === 'string' && query.length > 0) {
+                        return title.toLowerCase().indexOf(query) != -1;
+                    } else {
+                        return true;
+                    }
+                }
+
+                /* For each category we are querying */
+                for (var i = 0; i < searchCategories.length; i++) {
+                    var cat = postsByCategory[searchCategories[i]];
+
+                    if (typeof cat !== 'undefined') {
+                        /* For each post in the category */
+                        for (var j = 0; j < cat.length; j++) {
+                            var ok_month = false, postIdx = cat[j], date = new Date(posts[postIdx].date), 
+                                idx = dateToIndex(date);
+
+                            /* If the post belongs to one of the queried months, we can go forward. */
+                            for (var k = 0; k < searchMonths.length; k++) {
+                                if (idx == searchMonths[k]) {
+                                    ok_month = true;
+                                    break;
+                                }
+                            }
+
+                            /* And if the query matches too, we've found ourselves a positive. */
+                            if (ok_month && queryMatch(posts[postIdx].title)) {
+                                resultMap[postIdx] = true;
+                            }
+                        }
+                    }
+                }
+
+                var results = [];
+                for (var i in resultMap) {
+                    if (resultMap.hasOwnProperty(i)) {
+                        results.push(posts[i]);
+                    }
+                }
+
+                return results;
+            }
+
+            var searchBoxDesktop = $('#search-box-desktop'),
+                searchBoxMobile = $('#search-box-mobile'),
+                categorySelection = $('#blog-categories ul'),
+                monthSelection = $('#blog-months ul'),
+                
+                currentQuery = {
+                    query: '',
+                    categories: categoryList.slice(0),
+                    months: monthList.slice(0)
+                };
+
+            function searchAndDisplay() {
+                var results = search(currentQuery.query, currentQuery.categories, currentQuery.months);
+                displayPosts(results);
+            }
+
+           searchBoxDesktop.keyup(function() {
+                currentQuery.query = this.value;
+                searchAndDisplay();
+            });
+
+            searchBoxMobile.keyup(function() {
+                currentQuery.query = this.value;
+                searchAndDisplay();
+            });
+
+            categorySelection.find('li input').each(function() {
+                $(this).change(function() {
+                    var c = $(this).attr('data-category-name');
+                    addOrRemove(this.checked, currentQuery.categories, c);
+                    searchAndDisplay();
+                });
+            });
+
+            monthSelection.find('li input').each(function() {
+                $(this).change(function() {
+                    var m = 12 * parseInt($(this).attr('data-year')) + (parseInt($(this).attr('data-month')) - 1);
+                    addOrRemove(this.checked, currentQuery.months, m);
+                    searchAndDisplay();
+                });
+            });
+        });
+    });
+}));
+
+</script>
+ 
+        </section>
+        <footer>
+    <div>
+        <ul id="social-footer">
+            
+            <li class="facebook"><a title="Facebook" href="https://facebook.com">Facebook</a></li>
+            
+            <li class="twitter"><a title="Twitter" href="https://twitter.com">Twitter</a></li>
+            
+            <li class="linkedin"><a title="LinkedIn" href="https://linkedin.com">LinkedIn</a></li>
+            
+            <li class="github"><a title="GitHub" href="https://github.com">GitHub</a></li>
+            
+            <li class="codeforces"><a title="CodeForces" href="https://codeforces.com">CodeForces</a></li>
+            
+            <li class="topcoder"><a title="TopCoder" href="https://codeforces.com">TopCoder</a></li>
+            
+            </ul><p id="paragraph-footer">© 2016 Petar Veličković. Any and all views expressed here are my own and do not necessarily correspond to my employers/educators past and present. <br />
+Special thanks to <a href="https://github.com/geomaster">David Davidović</a> for making this website transition from a dream to reality.</p>
+<nav>
+            <ul>
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                    <li><a href="/">Home</a></li>
+                    
+                
+                    
+                    <li><a href="/about.html">About</a></li>
+                    
+                
+                    
+                    <li><a href="/blog.html">Blog</a></li>
+                    
+                
+                    
+                    <li><a href="/playlist.html">Playlist</a></li>
+                    
+                               
+            </ul>
+        </nav>
+    </div>
+</footer>
+
+
+    </body>
+
+</html>

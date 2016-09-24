@@ -1,0 +1,41 @@
+---
+layout: default
+title: Home
+index: 1
+---
+
+<section id="social-main">
+    <ul>
+        {% for i in site.social %}<li class="{{ i.id }}"><a title="{{ i.title }}" href="{{ i.url }}">{{ i.title }}</a></li>{% endfor %}
+    </ul>
+</section>
+{% markdown introductory-paragraph.md %}
+<section id="latest-posts">
+    <h1>Latest posts</h1>
+    <div id="post-list">
+        <ul>
+            {% for p in site.posts limit:3 %}
+            <li>
+                <h2><a href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a></h2>
+                <p class="post-meta">On <time pubdate>{{ p.date | date: "%B %-d, %Y" }}</time>{% if p.author %}, by <span class="author">{{ p.author }}</span>{% endif %}</p>
+            </li>
+            {% endfor %}
+        </ul>
+        <a href="{{ "/blog.html" | prepend: site.baseurl }}" id="see-more-posts">See more</a>
+    </div>
+</section>
+<section id="whereabouts">
+    <div id="clock"><div id="clock-time"></div><div id="hour-hand"></div><div id="minute-hand"></div></div>
+    <h1>Whereabouts</h1>
+    <div id="location-container">
+        <p id="location">{{ site.data.checkin.place_name }}</p>
+        <time>{{ site.data.checkin.date | time_ago_in_words }} ago</time>
+        <div data-location="{{ site.data.checkin.coords.lat }},{{ site.data.checkin.coords.lon }}" id="map"></div>
+    </div>
+</section>
+<script type="text/javascript">
+    {% include index.js %}
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC54HiYIHq9ABb64hIjLiVB1i_-qoqd2ck&callback=initMap">
+</script>
+

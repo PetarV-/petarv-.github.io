@@ -1,0 +1,2 @@
+Hello! I'm Petar, a first-year PhD student in Machine Learning and Bioinformatics at the [University of Cambridge](http://www.cam.ac.uk) [Computer Laboratory](http://www.cl.cam.ac.uk). Welcome to one of my homes on the web (a [more formal one](http://www.cl.cam.ac.uk/~pv273/) is hosted by the University). Feel free to shoot me an email with any queries (or if you’d just like to say hello) at: pv273 [at] cam [dot] ac [dot] uk.
+{: .introductory-paragraph } 
