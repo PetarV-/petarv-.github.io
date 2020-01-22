@@ -119,6 +119,14 @@ footer > div > * { display: table-cell; vertical-align: middle; }
 
 footer > div { display: table; }
 
+#social-main li.email a { background-color: #333333; }
+
+#social-main li.email a:hover:before { background-color: #555555; }
+
+#social-main li.email a:after { background-size: 40% auto; background-image: url("../images/social/email.svg"); }
+
+#social-main li.email a:hover:after { background-size: 50% auto; }
+
 #social-main li.facebook a { background-color: #325569; }
 
 #social-main li.facebook a:hover:before { background-color: #5C9EC2; }
@@ -151,9 +159,9 @@ footer > div { display: table; }
 
 #social-main li.github a:hover:after { background-size: 52% auto; }
 
-#social-main li.scholar a { background-color: #333333; }
+#social-main li.scholar a { background-color: #0A3463; }
 
-#social-main li.scholar a:hover:before { background-color: #555555; }
+#social-main li.scholar a:hover:before { background-color: #0054B2; }
 
 #social-main li.scholar a:after { background-size: 42% auto; background-image: url("../images/social/scholar.svg"); }
 
@@ -182,6 +190,8 @@ footer > div { display: table; }
 #social-main li.spotify a:after { background-size: 42% auto; background-image: url("../images/social/spotify.svg"); }
 
 #social-main li.spotify a:hover:after { background-size: 52% auto; }
+
+#social-footer li.email { background-image: url("../images/social/email.svg"); }
 
 #social-footer li.facebook { background-image: url("../images/social/facebook.svg"); background-size: auto 16px; background-position: 99%; }
 
