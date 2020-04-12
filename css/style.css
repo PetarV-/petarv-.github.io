@@ -31,13 +31,13 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 .group:after, #social-main ul:after { content: ""; display: table; clear: both; }
 
-#content:before, footer > div:before, .introductory-paragraph:before, #latest-posts:before, #whereabouts:before, #social-main:before, #playlist li:before, #blog-main:before, #blog-sidebar:before, section.page > h1:before, section.page > h2:before, #content:after, footer > div:after, .introductory-paragraph:after, #latest-posts:after, #whereabouts:after, #social-main:after, #playlist li:after, #blog-main:after, #blog-sidebar:after, section.page > h1:after, section.page > h2:after { content: "."; display: block; overflow: hidden; visibility: hidden; font-size: 0; line-height: 0; width: 0; height: 0; }
+#content:before, footer > div:before, ul#publications:before, .introductory-paragraph:before, #latest-posts:before, #whereabouts:before, #social-main:before, #playlist li:before, #blog-main:before, #blog-sidebar:before, section.page > h1:before, section.page > h2:before, #content:after, footer > div:after, ul#publications:after, .introductory-paragraph:after, #latest-posts:after, #whereabouts:after, #social-main:after, #playlist li:after, #blog-main:after, #blog-sidebar:after, section.page > h1:after, section.page > h2:after { content: "."; display: block; overflow: hidden; visibility: hidden; font-size: 0; line-height: 0; width: 0; height: 0; }
 
-#content:after, footer > div:after, .introductory-paragraph:after, #latest-posts:after, #whereabouts:after, #social-main:after, #playlist li:after, #blog-main:after, #blog-sidebar:after, section.page > h1:after, section.page > h2:after { clear: both; }
+#content:after, footer > div:after, ul#publications:after, .introductory-paragraph:after, #latest-posts:after, #whereabouts:after, #social-main:after, #playlist li:after, #blog-main:after, #blog-sidebar:after, section.page > h1:after, section.page > h2:after { clear: both; }
 
-#content, footer > div, .introductory-paragraph, #latest-posts, #whereabouts, #social-main, #playlist li, #blog-main, #blog-sidebar, section.page > h1, section.page > h2 { /* <IE7> */ *zoom: 1; /* </IE7> */ }
+#content, footer > div, ul#publications, .introductory-paragraph, #latest-posts, #whereabouts, #social-main, #playlist li, #blog-main, #blog-sidebar, section.page > h1, section.page > h2 { /* <IE7> */ *zoom: 1; /* </IE7> */ }
 
-#content, footer > div { margin-left: auto; margin-right: auto; max-width: 1220px; padding-left: 10px; padding-right: 10px; }
+#content, footer > div, ul#publications { margin-left: auto; margin-right: auto; max-width: 1220px; padding-left: 10px; padding-right: 10px; }
 
 .introductory-paragraph, #latest-posts, #whereabouts, #social-main, #playlist li, #blog-main, #blog-sidebar, section.page > h1, section.page > h2 { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding-left: 10px; padding-right: 10px; /* <IE7> */ *padding-left: 0; *padding-right: 0; /* </IE7> */ }
 
@@ -49,9 +49,15 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 body { font-family: 'Computer Modern Serif', georgia, serif; }
 
-em { font-style: italic; }
+em, i { font-style: italic; }
+
+strong, b { font-weight: bold; }
 
 p { line-height: 130%; }
+
+a { color: #1F2E43; }
+
+a:hover { text-decoration: none; }
 
 header { background-color: #1F2E43; color: white; padding: 30px 0 0 0; }
 
@@ -339,10 +345,6 @@ article#blog-main h2 { font-size: 22pt; }
 
 article#blog-main p { line-height: 1.5; margin: 25px 0; font-size: 15pt; text-align: justify; }
 
-article#blog-main p a { color: #1F2E43; }
-
-article#blog-main p a:hover { text-decoration: none; }
-
 article#blog-main p img { display: block; margin: 50px auto 15px; max-width: 100%; }
 
 article#blog-main p img + em { display: block; text-align: center; font-size: 13pt; margin-bottom: 30px; }
@@ -373,29 +375,49 @@ article#blog-main ul ul, article#blog-main ol ul { list-style-type: circle; marg
 
 article#blog-main ol ol, article#blog-main ul ol { list-style-type: lower-latin; margin-top: 10px; }
 
-#playlist { padding-top: 40px; }
+#playlist, #publications { padding-top: 40px; }
 
-#playlist li { position: relative; max-width: 500px; margin-bottom: 40px; }
+#playlist li, #publications li { position: relative; max-width: 500px; margin-bottom: 40px; }
 
-#playlist li:hover .cover-artwork { transform: scale(1.15); opacity: 0.6; }
+#playlist li:hover .cover-artwork, #publications li:hover .cover-artwork { transform: scale(1.15); opacity: 0.6; }
 
-#playlist li > div { background-color: white; box-sizing: content-box; padding-top: 100%; height: 0; overflow: hidden; position: relative; }
+#playlist li > div, #publications li > div { background-color: white; box-sizing: content-box; padding-top: 100%; height: 0; overflow: hidden; position: relative; }
 
-#playlist li > div:before { content: ''; display: block; position: absolute; bottom: 0; left: 0; right: 0; top: 0; background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 30%, black 100%); z-index: 1; }
+#playlist li > div:before, #publications li > div:before { content: ''; display: block; position: absolute; bottom: 0; left: 0; right: 0; top: 0; background: linear-gradient(to bottom, rgba(31, 46, 67, 0) 0%, rgba(31, 46, 67, 0.6) 45%, #1f2e43 100%); z-index: 1; }
 
-#playlist li a { display: block; position: absolute; left: 0; bottom: 0; top: 0; right: 0; z-index: 3; }
+#playlist li a, #publications li a { display: block; position: absolute; left: 0; bottom: 0; top: 0; right: 0; z-index: 3; }
 
-#playlist li .track-meta { position: absolute; bottom: 0; width: 100%; color: white; z-index: 2; text-shadow: black 0px 2px 2px; padding: 10px 10px; }
+#playlist li .track-meta, #publications li .track-meta { position: absolute; bottom: 0; width: 100%; color: white; z-index: 2; text-shadow: black 1px 3px 1px; padding: 10px 10px; }
 
-#playlist li .track-meta .track-name { font-size: 16pt; font-weight: bold; margin-bottom: 6px; }
+#playlist li .track-meta .track-name, #publications li .track-meta .track-name { font-size: 16pt; font-weight: bold; margin-bottom: 6px; }
 
-#playlist li .track-meta .track-meta-row { font-size: 11pt; line-height: 1.2; margin-bottom: 2px; }
+#playlist li .track-meta .track-meta-row, #publications li .track-meta .track-meta-row { font-size: 11pt; line-height: 1.2; margin-bottom: 2px; }
 
-#playlist li .track-meta .track-meta-row-label { color: #dddddd; }
+#playlist li .track-meta .track-meta-row p, #publications li .track-meta .track-meta-row p { font-size: inherit !important; display: inline !important; }
 
-#playlist li .track-meta .track-artist, #playlist li .track-meta .track-album { font-style: italic; }
+#playlist li .track-meta .track-meta-row-label, #publications li .track-meta .track-meta-row-label { color: #dddddd; }
 
-#playlist li .cover-artwork { position: absolute; width: 100%; height: 100%; left: 0; top: 0; bottom: 0; right: 0; transition: transform 0.3s ease, opacity 0.3s; }
+#playlist li .track-meta .track-artist, #playlist li .track-meta .track-album, #publications li .track-meta .track-artist, #publications li .track-meta .track-album { font-style: italic; }
+
+#playlist li .cover-artwork, #publications li .cover-artwork { position: absolute; width: 100%; height: 100%; left: 0; top: 0; bottom: 0; right: 0; transition: transform 0.3s ease, opacity 0.3s; }
+
+ul#publications { padding: 0 !important; list-style-type: none !important; }
+
+ul#publications li { margin-top: 0 !important; padding: 0 10px !important; }
+
+.experience p, .experience .years { line-height: 1.5em; }
+
+.experience .years { width: 8em; display: inline-block; vertical-align: top; color: #aaa; margin-left: 15px; }
+
+.experience .details { display: inline-block; vertical-align: top; }
+
+.experience .details .title { margin-bottom: 2px; color: #777; }
+
+.experience .details .title a { font-weight: bold; color: #1F2E43; }
+
+.experience .details .title .description { font-weight: bold; color: #1F2E43; }
+
+.experience .details .role { margin-bottom: 2px; font-style: italic; }
 
 /* Desktop */
 @media screen and (min-width: 970px) {
@@ -504,7 +526,7 @@ article#blog-main ol ol, article#blog-main ul ol { list-style-type: lower-latin;
   
   
   
-  #blog-sidebar { float: left; width: 33.3333333333%; /* <IE7> */ *width: expression(Math.floor(0.3333333333 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + 'px'); /* </IE7> */ }
+  #publications li, #blog-sidebar { float: left; width: 33.3333333333%; /* <IE7> */ *width: expression(Math.floor(0.3333333333 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + 'px'); /* </IE7> */ }
   
   
   section#blog-main { left: 33.3333333333%; /* <IE7> */ *left: expression(Math.floor(0.3333333333 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + 'px'); /* </IE7> */ }
@@ -524,6 +546,8 @@ article#blog-main ol ol, article#blog-main ul ol { list-style-type: lower-latin;
   #whereabouts > #location-container #map { height: 470px; position: absolute; bottom: 0; }
   #social-footer, footer nav { width: 25%; }
   #paragraph-footer { width: 50%; } }
+
+@media screen and (min-width: 970px) and (max-width: 1100px) { #publications li { width: 50%; } }
 
 /* Playlist 8x2 landscape */
 @media screen and (min-width: 530px) and (max-width: 969px) {
@@ -582,7 +606,7 @@ article#blog-main ol ol, article#blog-main ul ol { list-style-type: lower-latin;
   
   
   
-  #playlist li { float: left; width: 50%; /* <IE7> */ *width: expression(Math.floor(0.5 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + 'px'); /* </IE7> */ }
+  #playlist li, #publications li { float: left; width: 50%; /* <IE7> */ *width: expression(Math.floor(0.5 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + 'px'); /* </IE7> */ }
   
   
   
@@ -643,6 +667,9 @@ article#blog-main ol ol, article#blog-main ul ol { list-style-type: lower-latin;
   
   
   }
+
+/* Publications landscape */
+@media screen and (min-width: 530px) and (max-width: 780px) { #publications li { width: 100%; } }
 
 /* Playlist 16x1 portrait */
 @media screen and (max-width: 529px) {
@@ -761,7 +788,7 @@ article#blog-main ol ol, article#blog-main ul ol { list-style-type: lower-latin;
   
   
   
-  #playlist li { clear: both; width: 100%; } }
+  #playlist li, #publications li { clear: both; width: 100%; } }
 
 /* Mobile */
 @media screen and (max-width: 969px) {
@@ -889,7 +916,7 @@ article#blog-main ol ol, article#blog-main ul ol { list-style-type: lower-latin;
   #blog-sidebar { margin-top: 40px; }
   header nav { padding: 15px 0 30px; position: relative; }
   header nav ul li { display: block; width: 100%; }
-  header nav ul li a { display: block; width: 50%; margin: 0 auto; }
+  header nav ul li a { display: block; margin: 0 auto; }
   header nav ul li a.current { background-color: transparent; color: white; }
   header nav ul li a:before { content: none; }
   header nav ul li a:hover { background-color: white; color: #1F2E43; }
@@ -906,7 +933,7 @@ article#blog-main ol ol, article#blog-main ul ol { list-style-type: lower-latin;
   #social-main li:nth-child(3n + 1) { clear: left; }
   #social-main li:nth-child(2n) a { margin-right: 0; }
   article#blog-main p { text-align: left; }
-  #playlist li { margin-left: auto; margin-right: auto; }
+  #playlist li, #publications li { margin-left: auto; margin-right: auto; }
   footer { padding-left: 20px; padding-right: 20px; }
   footer > div { display: block; width: 100%; }
   footer > div > * { display: block; width: 100%; }
@@ -916,7 +943,10 @@ article#blog-main ol ol, article#blog-main ul ol { list-style-type: lower-latin;
   footer #paragraph-footer { margin-top: 30px; padding-top: 30px; border-top: 1px solid #dddddd; border-left: 0px none; border-right: 0px none; }
   footer nav { padding-left: 0; margin-top: 30px; padding-top: 30px; border-top: 1px solid #dddddd; }
   footer nav li { text-align: center; }
-  #blog-sidebar { padding-left: 10px; padding-right: 10px; margin-bottom: 70px; } }
+  #blog-sidebar { padding-left: 10px; padding-right: 10px; margin-bottom: 70px; }
+  .experience .years { margin: 5px 0; }
+  .experience .years, .experience .details { padding: 0 10px; }
+  .experience .details { margin-bottom: 10px; } }
 
 /** Syntax highlighting styles */
 .highlight { background: #fff; }
