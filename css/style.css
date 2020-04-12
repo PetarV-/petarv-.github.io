@@ -373,19 +373,19 @@ article#blog-main ul ul, article#blog-main ol ul { list-style-type: circle; marg
 
 article#blog-main ol ol, article#blog-main ul ol { list-style-type: lower-latin; margin-top: 10px; }
 
-#playlist { padding-top: 70px; }
+#playlist { padding-top: 40px; }
 
-#playlist li { position: relative; max-width: 500px; margin-bottom: 20px; }
+#playlist li { position: relative; max-width: 500px; margin-bottom: 40px; }
 
 #playlist li:hover .cover-artwork { transform: scale(1.15); opacity: 0.6; }
 
 #playlist li > div { background-color: white; box-sizing: content-box; padding-top: 100%; height: 0; overflow: hidden; position: relative; }
 
-#playlist li > div:before { content: ''; display: block; position: absolute; bottom: 0; left: 0; right: 0; top: 0; background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 0.8) 100%); z-index: 1; }
+#playlist li > div:before { content: ''; display: block; position: absolute; bottom: 0; left: 0; right: 0; top: 0; background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 30%, black 100%); z-index: 1; }
 
 #playlist li a { display: block; position: absolute; left: 0; bottom: 0; top: 0; right: 0; z-index: 3; }
 
-#playlist li .track-meta { position: absolute; bottom: 0; width: 100%; color: white; z-index: 2; text-shadow: black 0px 2px 2px; padding: 24px 17px; }
+#playlist li .track-meta { position: absolute; bottom: 0; width: 100%; color: white; z-index: 2; text-shadow: black 0px 2px 2px; padding: 10px 10px; }
 
 #playlist li .track-meta .track-name { font-size: 16pt; font-weight: bold; margin-bottom: 6px; }
 
