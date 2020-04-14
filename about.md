@@ -1,54 +1,12 @@
-<!doctype html>
-<html>
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        extensions: ["tex2jax.js"],
-        tex2jax:{
-            inlineMath: [['$','$'], ['\\(','\\)']]
-        },
-        jax: [ "input/TeX", "output/HTML-CSS" ]
-    });
-</script>
-<script type="text/javascript" async
-    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js">
-</script>
+---
+layout: cv
+title: Experience
+index: 5
+class: experience page
+---
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Experience | Petar Veličković</title>
-    <meta name="description" content="Research Scientist in Machine Learning 
-">
-
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="canonical" href="http://localhost:4000/about.html">
-    <link rel="alternate" type="application/rss+xml" title="Petar Veličković" href="http://localhost:4000/feed.xml">
-    
-</head>
-
-
-<body>
-  <header>
-    <h1>
-        <div class="headshot"></div>
-        Petar Veličković
-    </h1>
-    
-    <h2>Research Scientist</h2>
-    
-    <nav>
-        <ul>
-            <li><a  href="/">Home</a></li><li><a  href="/publications.html">Researching</a></li><li><a  href="/communications.html">Communicating</a></li><li><a  href="/advising.html">Advising</a></li><li><a  class="current" href="/about.html">Experience</a></li>
-        </ul>
-    </nav>
-</header>
-
-
-  <section id="content"class="experience page">
-                <h1 style="text-align:left;">Work Experience</h1>
-<p><br /></p>
+<h1 style="text-align:left;">Work Experience</h1>
+<br>
 
 <div class="years">
     2019–present
@@ -61,7 +19,7 @@
     </p>
 </div>
 
-<p><br /></p>
+<br>
 
 <div class="years">
     2016–2019
@@ -74,7 +32,7 @@
     </p>
 </div>
 
-<p><br /></p>
+<br>
 
 <div class="years">
     Jul–Sep 2018
@@ -87,7 +45,7 @@
     </p>
 </div>
 
-<p><br /></p>
+<br>
 
 <div class="years">
     Jul–Aug 2017
@@ -100,7 +58,7 @@
     </p>
 </div>
 
-<p><br /></p>
+<br>
 
 <div class="years">
     Jul–Oct 2016
@@ -113,7 +71,7 @@
     </p>
 </div>
 
-<p><br /></p>
+<br>
 
 <div class="years">
     Jun–Sep 2015
@@ -126,7 +84,7 @@
     </p>
 </div>
 
-<p><br /></p>
+<br>
 
 <div class="years">
     Jun–Aug 2014
@@ -139,7 +97,7 @@
     </p>
 </div>
 
-<p><br /></p>
+<br>
 
 <div class="years">
     Jun–Sep 2013
@@ -152,10 +110,10 @@
     </p>
 </div>
 
-<p><br /></p>
+<br>
 
 <h1 style="text-align:left;">Education</h1>
-<p><br /></p>
+<br>
 
 <div class="years">
     2016–2019
@@ -168,7 +126,7 @@
     </p>
 </div>
 
-<p><br /></p>
+<br>
 
 <div class="years">
     2012–2015
@@ -181,7 +139,7 @@
     </p>
 </div>
 
-<p><br /></p>
+<br>
 
 <div class="years">
     2008–2012
@@ -194,10 +152,10 @@
     </p>
 </div>
 
-<p><br /></p>
+<br>
 
 <h1 style="text-align:left;">Honours and Awards</h1>
-<p><br /></p>
+<br>
 
 <div class="years">
     Dec 2019
@@ -210,7 +168,7 @@
     </p>
 </div>
 
-<p><br /></p>
+<br>
 
 <div class="years">
     May 2019
@@ -220,7 +178,7 @@
     <p class="role">The 7th International Conference on Learning Representations</p>
 </div>
 
-<p><br /></p>
+<br>
 
 <div class="years">
     Apr 2019
@@ -233,7 +191,7 @@
     </p>
 </div>
 
-<p><br /></p>
+<br>
 
 <div class="years">
     Jan 2019
@@ -246,7 +204,7 @@
     </p>
 </div>
 
-<p><br /></p>
+<br>
 
 <div class="years">
     May 2018
@@ -256,7 +214,7 @@
     <p class="role">The 6th International Conference on Learning Representations</p>
 </div>
 
-<p><br /></p>
+<br>
 
 <div class="years">
     Dec 2017
@@ -266,7 +224,7 @@
     <p class="role">NIPS 2017 Time Series Workshop</p>
 </div>
 
-<p><br /></p>
+<br>
 
 <div class="years">
     Nov 2017
@@ -279,7 +237,7 @@
     </p>
 </div>
 
-<p><br /></p>
+<br>
 
 <div class="years">
     Oct 2017
@@ -292,7 +250,7 @@
     </p>
 </div>
 
-<p><br /></p>
+<br>
 
 <div class="years">
     Apr 2017
@@ -305,7 +263,7 @@
     </p>
 </div>
 
-<p><br /></p>
+<br>
 
 <div class="years">
     Jan 2017
@@ -318,7 +276,7 @@
     </p>
 </div>
 
-<p><br /></p>
+<br>
 
 <div class="years">
     Nov 2016
@@ -331,7 +289,7 @@
     </p>
 </div>
 
-<p><br /></p>
+<br>
 
 <div class="years">
     Jan 2016
@@ -344,7 +302,7 @@
     </p>
 </div>
 
-<p><br /></p>
+<br>
 
 <div class="years">
     Nov 2014
@@ -357,7 +315,7 @@
     </p>
 </div>
 
-<p><br /></p>
+<br>
 
 <div class="years">
     Jul 2014
@@ -370,7 +328,7 @@
     </p>
 </div>
 
-<p><br /></p>
+<br>
 
 <div class="years">
     Jul 2013
@@ -383,20 +341,20 @@
     </p>
 </div>
 
-<p><br /></p>
+<br>
 
 <div class="years">
     May 2012
 </div>
 <div class="details">
     <p class="title"><span class="description">Cambridge Overseas Trust Scholarship</span>, Cambridge, United Kingdom</p>
-    <p class="role">Cambridge Commonwealth, European &amp; International Trust</p>
+    <p class="role">Cambridge Commonwealth, European & International Trust</p>
     <p class="description">
         $\sim$ Three-year maintenance scholarship, award value £7,000 per annum
     </p>
 </div>
 
-<p><br /></p>
+<br>
 
 <div class="years">
     May 2012
@@ -408,66 +366,3 @@
         $\sim$ Three-year tuition scholarship, award value £24,543 per annum
     </p>
 </div>
-
-        </section>
-        <footer>
-    <div>
-        <ul id="social-footer">
-            
-            <li class="email"><a title="Email" href="https://aemail.com/wpmM">Email</a></li>
-            
-            <li class="facebook"><a title="Facebook" href="https://www.facebook.com/petar.velickovic.547/">Facebook</a></li>
-            
-            <li class="twitter"><a title="Twitter" href="https://www.twitter.com/PetarV_93/">Twitter</a></li>
-            
-            <li class="linkedin"><a title="LinkedIn" href="https://www.linkedin.com/in/petarvelickovic/">LinkedIn</a></li>
-            
-            <li class="github"><a title="GitHub" href="https://www.github.com/PetarV-/">GitHub</a></li>
-            
-            <li class="scholar"><a title="Google Scholar" href="https://scholar.google.co.uk/citations?user=kcTK_FAAAAAJ&hl=en">Google Scholar</a></li>
-            
-            <li class="codeforces"><a title="CodeForces" href="https://codeforces.com/profile/PetarV">CodeForces</a></li>
-            
-            <li class="topcoder"><a title="TopCoder" href="https://www.topcoder.com/members/petarv/">TopCoder</a></li>
-            
-            <li class="spotify"><a title="Spotify" href="https://open.spotify.com/user/2162wixg4vfgcxufjh66ft7xa?si=JFDwoAUyQuK8UhrjcTrRMg">Spotify</a></li>
-            
-            </ul><p id="paragraph-footer">© 2020 Petar Veličković. Any and all views expressed here are my own and do not necessarily correspond to my employers/educators past and present. <br />
-Special thanks to <a href="https://github.com/geomaster">David Davidović</a> for making this website transition from a dream to reality.</p>
-<nav>
-            <ul>
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                    <li><a href="/">Home</a></li>
-                    
-                
-                    
-                    <li><a href="/publications.html">Researching</a></li>
-                    
-                
-                    
-                    <li><a href="/communications.html">Communicating</a></li>
-                    
-                
-                    
-                    <li><a href="/advising.html">Advising</a></li>
-                    
-                
-                    
-                    <li><a href="/about.html">Experience</a></li>
-                    
-                               
-            </ul>
-        </nav>
-    </div>
-</footer>
-
-
-    </body>
-</html>

@@ -1,0 +1,49 @@
+tracks:
+    - name: ChronoMID—Cross-modal neural networks for 3-D temporal medical imaging data
+      artist: "Alexander G. Rakowski, **Petar Veličković**, Enrico Dall'Ara and Pietro Liò"
+      artwork_url: images/pubs/chronomid.png
+      url: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0228962
+      album:
+          name: PLOS ONE
+          year: 2020
+
+    - name: "XFlow: Cross-Modal Deep Neural Networks for Audiovisual Classification"
+      artist: "Cătălina Cangea, **Petar Veličković** and Pietro Liò"
+      artwork_url: images/pubs/xflow.png
+      url: https://ieeexplore.ieee.org/document/8894404
+      album:
+          name: TNNLS
+          year: 2019
+
+    - name: Attentive cross-modal paratope prediction
+      artist: "Andreea Deac, **Petar Veličković** and Pietro Sormanni"
+      artwork_url: images/pubs/attn-parapred.png
+      url: https://www.liebertpub.com/doi/abs/10.1089/cmb.2018.0175
+      album:
+          name: JCB
+          year: 2019
+
+    - name: "Parapred: antibody paratope prediction using convolutional and recurrent neural networks"
+      artist: "Edgar Liberis, **Petar Veličković**, Pietro Sormanni, Michele Vendruscolo and Pietro Liò"
+      artwork_url: images/pubs/parapred.png
+      url: https://academic.oup.com/bioinformatics/article/34/17/2944/4972995
+      album:
+          name: Bioinformatics
+          year: 2018
+
+    - name: "Muxstep: an open-source C++ multiplex HMM library for making inferences on multiple data types"
+      artist: "**Petar Veličković** and Pietro Liò"
+      artwork_url: images/pubs/muxstep.png
+      url: https://academic.oup.com/bioinformatics/article-abstract/32/16/2562/1743536
+      album:
+          name: Bioinformatics
+          year: 2016
+
+    - name: Molecular multiplex network inference using Gaussian mixture hidden Markov models
+      artist: "**Petar Veličković** and Pietro Liò"
+      artwork_url: images/pubs/mgmhmm.png
+      url: https://academic.oup.com/comnet/article-abstract/4/4/561/2608461
+      album:
+          name: Journal of Complex Networks
+          year: 2016
+

@@ -1,0 +1,260 @@
+.introductory-paragraph {
+    margin: 50px 0 45px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid $main-color;
+    font-size: 16pt;
+    text-align: justify;
+}
+
+#latest-posts {
+    #post-list {
+        background: $main-color;
+        padding: 50px 40px;
+        color: white;
+
+        margin-top: 25px;
+
+        #see-more-posts {
+            display: block;
+            background-color: transparent;
+            color: white;
+            padding: 14px 30px;
+            border: 3px solid white;
+            text-decoration: none;
+            font-size: 14pt;
+            text-align: center;
+            font-weight: bold;
+
+            transition: color 0.2s, background-color 0.2s;
+
+            &:hover {
+                background-color: white;
+                color: $main-color;
+            }
+        }
+    }
+
+    ul {
+        li {
+            margin-bottom: 40px;
+
+            h2 {
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: white;
+                    transition: color 0.2s;
+                    font-size: 18pt;
+                    line-height: 120%;
+
+                    &:hover {
+                        color: $my-gray;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .post-meta {
+                margin-top: 12px;
+
+                time, .author {
+                    font-style: italic;
+                }
+            }
+
+        }
+
+        li:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+#whereabouts {
+    #location {
+        margin-top: 25px;
+        font-size: 16pt;
+    }
+
+    time {
+        display: block;
+        margin-top: 6px;
+        font-style: italic;
+        font-size: 13pt;
+    }
+
+    #clock {
+
+        display: none;
+
+        float: right;
+        border-radius: 100%;
+        width: $clock-size;
+        height: $clock-size;
+        border: $clock-border solid $main-color;
+        position: relative;
+        transition: border-color 0.2s;
+
+        #clock-time {
+            opacity: 0;
+            pointer-events: none;
+            position: absolute;
+            bottom: -35px;
+            left: (-$clock-size - $clock-time-width) / 2;
+            height: 35px;
+            width: $clock-time-width;
+            padding: 10px;
+
+            background: $main-color-light;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+
+            transition: opacity 0.2s, bottom 0.2s ease;
+        }
+
+        &:hover #clock-time {
+            bottom: -50px;
+            opacity: 1;
+        }
+
+        &:hover {
+            border-color: $main-color-light;
+        }
+
+        &:hover #minute-hand, &:hover #hour-hand {
+            background: $main-color-light;
+        }
+
+        #hour-hand, #minute-hand {
+            display: block;
+            position: absolute;
+            background: $main-color;
+            transition: background-color 0.2s;
+        }
+
+        #hour-hand {
+            width: $hour-hand-length;
+            height: $hour-hand-weight;
+            left: ($clock-size - 2 * $clock-border) / 2;
+            top: ($clock-size - 2 * $clock-border - $hour-hand-weight) / 2;
+            transform-origin: 0 50%;
+        }
+
+        #minute-hand {
+            width: $minute-hand-length;
+            height: $minute-hand-weight;
+            left: ($clock-size - 2 * $clock-border) / 2;
+            top: ($clock-size - 2 * $clock-border - $minute-hand-weight) / 2;
+            transform-origin: 0 50%;
+        }
+
+
+        &:before {
+            content: '';
+            position: absolute;
+            display: block;
+            border-radius: 100%;
+            background: $main-color;
+            width: $center-size;
+            height: $center-size;
+            left: ($clock-size - $center-size - 2 * $clock-border) / 2;
+            top: ($clock-size - $center-size - 2 * $clock-border) / 2;
+        }
+
+        &:hover:before {
+            background: $main-color-light;
+        }
+    }
+
+    #map {
+        width: 100%;
+        height: 400px;
+        margin-top: 25px;
+        background: $main-color;
+    }
+}
+
+#social-main {
+    text-align: center;
+
+    ul {
+        @extend .group;
+        margin-right: -$social-icon-gutter;
+    }
+
+    li {
+        display: inline-block;
+        width: 100% / $social-icon-count;
+        max-width: $social-size;
+        padding-right: $social-icon-gutter;
+
+        a {
+            display: inline-block;
+            width: 100%;
+            padding-top: 100%;
+            border-radius: 50%;
+            box-sizing: content-box;
+            height: 0;
+
+            z-index: 1;
+
+
+            position: relative;
+
+            @include hide-text;
+
+            &:active, &:focus {
+                border: 0px none;
+            }
+
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                opacity: 0;
+                width: 100%;
+                height: 100%;
+                transform: scale(0.4);
+                border-radius: 50%;
+
+                transition: opacity 0.4s ease, transform 0.4s ease;
+                z-index: 2;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-image: url('../images/social/placeholder.svg');
+
+                transition: background-size 0.2s ease;
+
+                z-index: 3;
+            }
+
+            &:hover {
+
+            }
+
+            &:hover:before {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            &:hover:after {
+                background-size: 45% 45%;
+            }
+        }
+    }
+}

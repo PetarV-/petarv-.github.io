@@ -1,0 +1,65 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Petar Veličković
+email: petarv@google.com
+description: > 
+    Research Scientist in Machine Learning 
+  
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://petarv-.github.io" # the base hostname & protocol for your site
+
+main_heading: Petar Veličković
+main_subheading: Research Scientist
+
+social:
+    - title: Email
+      url: https://aemail.com/wpmM
+      id: email
+
+    - title: Facebook
+      url: https://www.facebook.com/petar.velickovic.547/
+      id: facebook
+
+    - title: Twitter
+      url: https://www.twitter.com/PetarV_93/
+      id: twitter
+
+    - title: LinkedIn
+      url: https://www.linkedin.com/in/petarvelickovic/
+      id: linkedin
+
+    - title: GitHub
+      url: https://www.github.com/PetarV-/
+      id: github
+
+    - title: Google Scholar
+      url: https://scholar.google.co.uk/citations?user=kcTK_FAAAAAJ&hl=en
+      id: scholar
+
+    - title: CodeForces
+      url: https://codeforces.com/profile/PetarV
+      id: codeforces
+
+    - title: TopCoder
+      url: https://www.topcoder.com/members/petarv/
+      id: topcoder
+
+    - title: Spotify
+      url: https://open.spotify.com/user/2162wixg4vfgcxufjh66ft7xa?si=JFDwoAUyQuK8UhrjcTrRMg
+      id: spotify
+          
+categories_list:
+    - Publications
+    - Talks
+    - Lectures
+    - Honours & Awards
+
+# Build settings
+markdown: kramdown
+style: kjhealy

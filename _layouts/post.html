@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+    {% include mathjax.html %}
+    <body>
+        {% include header.html %}
+        <section id="content" class="page blog post{% if page.class %}{{ page.class }}{% endif %}">
+            <h1>
+                {% if page.display_title %}
+                {{ page.display_title }}
+                {% else %}
+                {{ page.title }}
+                {% endif %}
+            </h1>
+            {% if page.author %}
+            <div class="meta">
+                by <span class="author">{{ page.author }}</span>
+                {% if page.date %}
+                on <time pubdate>{{ page.date | date: "%B %-d, %Y" }}</time>
+                {% endif %}
+            </div>
+            {% endif %}
+            {% if page.categories %}
+            <div class="meta categories">
+                Filed under: 
+                {% for cat in page.categories %}
+                {% capture cslug %}{{ cat | slugify }}{% endcapture %}
+                <span class="category"><a href="{{ "/blog.html#categories=" | append: cslug | prepend: site.baseurl }}">{{ cat }}</a></span>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            <article id="blog-main">
+                {{ content }}
+            </article>
+        </section>
+        {% include footer.html %}
+    </body>
+</html>

@@ -1,0 +1,89 @@
+tracks:
+    - name: Neural Execution of Graph Algorithms
+      artist: "**Petar Veličković**, Rex Ying, Matilde Padovano, Raia Hadsell and Charles Blundell"
+      artwork_url: images/pubs/neural-exec.png
+      url: https://openreview.net/forum?id=SkgKO0EtvS
+      album:
+          name: ICLR
+          year: 2020
+
+    - name: Deep Graph Infomax
+      artist: "**Petar Veličković**, William Fedus, William L. Hamilton, Pietro Liò, Yoshua Bengio and R Devon Hjelm"
+      artwork_url: images/pubs/dgi.png
+      url: https://openreview.net/forum?id=rklz9iAcKQ
+      album:
+          name: ICLR
+          year: 2019
+
+    - name: Convolutional neural networks for mesh-based parcellation of the cerebral cortex
+      artist: "Guillem Cucurull, Konrad Wagstyl, Arantxa Casanova, **Petar Veličković**, Estrid Jakobsen, Michal Drozdzal, Adriana Romero, Alan Evans and Yoshua Bengio"
+      artwork_url: images/pubs/parcellation.png
+      url: https://openreview.net/forum?id=rkKvBAiiz
+      album:
+          name: MIDL
+          year: 2018
+
+    - name: Automatic Inference of Cross-Modal Connection Topologies for X-CNNs
+      artist: "Laurynas Karazija, **Petar Veličković** and Pietro Liò"
+      artwork_url: images/pubs/xsertion.png
+      url: https://link.springer.com/chapter/10.1007/978-3-319-92537-0_7
+      album:
+          name: ISNN
+          year: 2018
+
+    - name: Cross-modal Recurrent Models for Weight Objective Prediction from Multimodal Time-series Data
+      artist: "**Petar Veličković**, Laurynas Karazija, Nicholas D. Lane, Sourav Bhattacharya, Edgar Liberis, Pietro Liò, Angela Chieh, Otmane Bellahsen and Matthieu Vegreville"
+      artwork_url: images/pubs/xlstm.png
+      url: https://dl.acm.org/doi/abs/10.1145/3240925.3240937
+      album:
+          name: PervasiveHealth
+          year: 2018
+
+    - name: Graph Attention Networks
+      artist: "**Petar Veličković**, Guillem Cucurull, Arantxa Casanova, Adriana Romero, Pietro Liò and Yoshua Bengio"
+      artwork_url: images/pubs/gat.png
+      url: https://openreview.net/forum?id=rJXMpikCZ
+      album:
+          name: ICLR
+          year: 2018
+
+    - name: Multi-omics data integration using cross-modal neural networks
+      artist: "Ioana Bica, **Petar Veličković**, Hui Xiao and Pietro Liò"
+      artwork_url: images/pubs/snn.png
+      url: https://www.elen.ucl.ac.be/Proceedings/esann/esannpdf/es2018-93.pdf
+      album:
+          name: ESANN
+          year: 2018
+
+    - name: Using deep data augmentation training to address software and hardware heterogeneities in wearable and smartphone sensing devices
+      artist: "Akhil Mathur, Tianlin Zhang, Sourav Bhattacharya, **Petar Veličković**, Leonid Joffe, Nicholas D. Lane, Fahim Kawsar and Pietro Liò"
+      artwork_url: images/pubs/hetro.png
+      url: https://ieeexplore.ieee.org/abstract/document/8480071/
+      album:
+          name: IPSN
+          year: 2018
+
+    - name: Scaling health analytics to millions without compromising privacy using deep distributed behavior models
+      artist: "**Petar Veličković**, Nicholas D. Lane, Sourav Bhattacharya, Angela Chieh, Otmane Bellahsen and Matthieu Vegreville"
+      artwork_url: images/pubs/health-analytics.png
+      url: https://dl.acm.org/doi/abs/10.1145/3154862.3154873
+      album:
+          name: PervasiveHealth
+          year: 2017
+
+    - name: "X-CNN: Cross-modal convolutional neural networks for sparse datasets"
+      artist: "**Petar Veličković**, Duo Wang, Nicholas D. Lane and Pietro Liò"
+      artwork_url: images/pubs/xcnn.png
+      url: https://ieeexplore.ieee.org/abstract/document/7849978/
+      album:
+          name: SSCI
+          year: 2016
+
+    - name: "Viral: Real-world competing process simulations on multiplex networks"
+      artist: "**Petar Veličković**, Andrej Ivašković, Stella Lau and Miloš Stanojević"
+      artwork_url: images/pubs/viral.png
+      url: http://alas.matf.bg.ac.rs/~websites/bioinfo/wp-content/uploads/2015/11/BelBI2016.book_of_abstracts.v3.pdf#page=132
+      album:
+          name: BelBi
+          year: 2016
+
