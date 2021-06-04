@@ -181,13 +181,13 @@ footer > div { display: table; }
 
 #social-main li.codeforces a:hover:after { background-size: 54% auto; }
 
-#social-main li.topcoder a { background-color: #4a3b6d; }
+#social-main li.youtube a { background-color: #4a3b6d; }
 
-#social-main li.topcoder a:hover:before { background-color: #8066BC; }
+#social-main li.youtube a:hover:before { background-color: #8066BC; }
 
-#social-main li.topcoder a:after { background-size: 64% auto; background-image: url("../images/social/topcoder.svg"); }
+#social-main li.youtube a:after { background-size: 47% auto; background-image: url("../images/social/youtube.svg"); }
 
-#social-main li.topcoder a:hover:after { background-size: 74% auto; }
+#social-main li.youtube a:hover:after { background-size: 57% auto; }
 
 #social-main li.spotify a { background-color: #B5183F; }
 
@@ -211,7 +211,7 @@ footer > div { display: table; }
 
 #social-footer li.codeforces { background-image: url("../images/social/codeforces.svg"); }
 
-#social-footer li.topcoder { background-image: url("../images/social/topcoder.svg"); }
+#social-footer li.youtube { background-image: url("../images/social/youtube.svg"); }
 
 #social-footer li.spotify { background-image: url("../images/social/spotify.svg"); }
 
