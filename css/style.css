@@ -81,7 +81,7 @@ header nav ul li a { color: white; display: inline-block; text-decoration: none;
 
 header nav ul li a.current { color: #1F2E43; background-color: white; }
 
-header nav ul li a:before { display: block; content: ''; position: absolute; top: 0; left: 50%; right: 50%; height: 5px; background-color: white; transition: left 0.3s ease, right 0.3s ease; }
+header nav ul li a:before { display: block; content: ''; position: absolute; top: 0; left: 51%; right: 51%; height: 5px; background-color: white; transition: left 0.3s ease, right 0.3s ease; }
 
 header nav ul li a:hover:before { left: 0; right: 0; }
 
@@ -141,13 +141,13 @@ footer > div { display: table; }
 
 #social-main li.facebook a:hover:after { background-size: 28% auto; }
 
-#social-main li.twitter a { background-color: #488f65; }
+#social-main li.x a { background-color: #488f65; }
 
-#social-main li.twitter a:hover:before { background-color: #62C389; }
+#social-main li.x a:hover:before { background-color: #62C389; }
 
-#social-main li.twitter a:after { background-size: 40% auto; background-image: url("../images/social/twitter.svg"); }
+#social-main li.x a:after { background-size: 40% auto; background-image: url("../images/social/x.svg"); }
 
-#social-main li.twitter a:hover:after { background-size: 50% auto; }
+#social-main li.x a:hover:after { background-size: 50% auto; }
 
 #social-main li.linkedin a { background-color: #6e4542; }
 
@@ -201,7 +201,7 @@ footer > div { display: table; }
 
 #social-footer li.facebook { background-image: url("../images/social/facebook.svg"); background-size: auto 16px; background-position: 99%; }
 
-#social-footer li.twitter { background-image: url("../images/social/twitter.svg"); }
+#social-footer li.x { background-image: url("../images/social/x.svg"); }
 
 #social-footer li.linkedin { background-image: url("../images/social/linkedin.svg"); }
 
@@ -383,11 +383,11 @@ article#blog-main ol ol, article#blog-main ul ol { list-style-type: lower-latin;
 
 #playlist li > div, #publications li > div { background-color: white; box-sizing: content-box; padding-top: 100%; height: 0; overflow: hidden; position: relative; }
 
-#playlist li > div:before, #publications li > div:before { content: ''; display: block; position: absolute; bottom: 0; left: 0; right: 0; top: 0; background: linear-gradient(to bottom, rgba(31, 46, 67, 0) 0%, rgba(31, 46, 67, 0.6) 45%, #1f2e43 100%); z-index: 1; }
+#playlist li > div:before, #publications li > div:before { content: ''; display: block; position: absolute; bottom: 0; left: 0; right: 0; top: 0; background: linear-gradient(to bottom, rgba(31, 46, 67, 0) 0%, rgba(31, 46, 67, 0.6) 75%, #1f2e43 100%); z-index: 1; }
 
 #playlist li a, #publications li a { display: block; position: absolute; left: 0; bottom: 0; top: 0; right: 0; z-index: 3; }
 
-#playlist li .track-meta, #publications li .track-meta { position: absolute; bottom: 0; width: 100%; color: white; z-index: 2; text-shadow: black 1px 3px 1px; padding: 10px 10px; }
+#playlist li .track-meta, #publications li .track-meta { position: absolute; bottom: 0; width: 100%; color: white; z-index: 2; text-shadow: black 1px 1px 5px; padding: 10px 10px; }
 
 #playlist li .track-meta .track-name, #publications li .track-meta .track-name { font-size: 16pt; font-weight: bold; margin-bottom: 6px; }
 
